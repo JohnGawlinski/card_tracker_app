@@ -1,5 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'my_decks_page.dart';
+import 'card_database_page.dart';
+import 'match_history_page.dart';
 
 void main() {
   runApp(const CardTrackerApp());
@@ -74,13 +77,19 @@ class _MainPageState extends State<MainPage> {
             child: Padding(
               padding: const EdgeInsets.all(24),
               child: selectedPage == 0
-                  ? buildDashboard()
-                  : Center(
-                      child: Text(
-                        pages[selectedPage],
-                        style: const TextStyle(fontSize: 32),
-                      ),
-                    ),
+                ? buildDashboard()
+                : selectedPage == 1
+                    ? const MyDecksPage()
+                    : selectedPage == 2
+                        ? const CardDatabasePage()
+                        :selectedPage == 3
+                            ? const MatchHistoryPage()
+                            : Center(
+                                child: Text(
+                                  pages[selectedPage],
+                                  style: const TextStyle(fontSize: 32),
+                ),
+              ),
             ),
           ),
         ],
