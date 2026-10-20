@@ -1,6 +1,6 @@
 # card_tracker_app
 
-A new Flutter project.
+This is just a simple demo for my Requirements Engineering class. We needed to present on our documentation and requirements of our chosen project and in that presentation, we needed visuals. I took one step further and decided to make a "working" demo.
 
 ## Getting Started
 
